@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.about {
+    height: 600px;
+    margin-top: 120px;
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(150px, 284px));
+        grid-template-rows: repeat(4, minmax(150px, auto));
+        /* grid-auto-rows: minmax(100px, auto); */
+        
+        grid-template-areas: 
+        "foto foto area2 area2"
+        "foto foto area2 area2"
+        "foto foto skill1 skill2"
+        "foto foto skill3 ."
+        
+       
+    }
+/*     &__skills {
+        display: inline-block;
+        width: 50%;
+    } */
+
+    &__subtitle {
+        @include before_circle;
+        position: relative;
+        padding-left: 10px;
+        z-index: 2;
+        margin-top: 6px;
+    }
+
+    &__skills::before {
+        top: -5%;
+    }
+
+
+}
+
+
+#skill1 {
+    grid-area: skill1;
+}
+#skill2 {
+    grid-area: skill2;
+}
+#skill3 {
+    grid-area: skill3;
+}
+
+
+#foto {
+    grid-area: foto;
+}
+#area2 {
+    grid-area: area2;
+}
+#area3 {
+    grid-area: area3;
+}
