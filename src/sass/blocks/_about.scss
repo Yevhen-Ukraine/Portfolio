@@ -18,13 +18,23 @@
         "foto foto area2 area2"
         "foto foto skill1 skill2"
         "foto foto skill3 ."
-        
-       
+     
     }
-/*     &__skills {
-        display: inline-block;
-        width: 50%;
-    } */
+    .divider {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    //&__title 
+    
+    &__skills {
+        display: grid;
+        grid-template-columns: 40px 200px;
+        column-gap: 5px;
+        img {
+            margin-top: 15px;
+        }
+    }
+
 
     &__subtitle {
         @include before_circle;
@@ -32,12 +42,25 @@
         padding-left: 10px;
         z-index: 2;
         margin-top: 6px;
+        
     }
 
     &__skills::before {
-        top: -5%;
+        top: 0;
     }
+    &__text {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        color: #000000;
+    }
+    &__descr {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
 
+        color: #000000;
+    }
 
 }
 
