@@ -17,5 +17,12 @@
     &__title {
         position: relative;
         @include before_circle;
+        padding-left: 12px;
+        padding-top: 1px;
+        
+    }
+
+    &__descr {
+        padding-top: 6px;
     }
 }
