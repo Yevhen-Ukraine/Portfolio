@@ -61,6 +61,11 @@ gulp.task('icons', function () {
         .pipe(browserSync.stream());
 });
 
+gulp.task('mailer', function () {
+    return gulp.src("src/mailer/**/*")
+        .pipe(gulp.dest("dist/mailer"));
+});
+
 gulp.task('images', function () {
     return gulp.src("src/img/**/*")
         .pipe(imagemin())
