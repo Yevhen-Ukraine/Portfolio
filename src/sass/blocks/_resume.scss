@@ -40,16 +40,18 @@
         }
         ul {
             list-style-type: none;
-            li {
-                &:after {
-                    content: '';
-                    width: 1px;
-                    height: 100%;
-                    position: absolute;
-                    top: -18px;
-                    left: 0;
-                    background-color: #0000;
-                }
+            
+        }
+        li {
+            position: relative;
+            &:after {
+                content: '';
+                position: absolute;
+                width: 1px;
+                height: 100%;
+                top: -18px;
+                left: 0;
+                background-color: #000;
             }
         }
     }
