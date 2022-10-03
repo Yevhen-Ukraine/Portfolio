@@ -48,7 +48,7 @@
                 content: '';
                 position: absolute;
                 width: 1px;
-                height: 100%;
+                height: calc(100% + 16px);
                 top: -16px;
                 left: 0;
                 background-color: #000;
@@ -56,6 +56,15 @@
         }
     }
     &__item {
+        position: relative;
+        &::before {
+            content: '';
+            height: 1px;
+            width: 45px;
+            position: absolute;
+            top: 68px;
+            background-color: #000;
+        }
         &-head {
             position: relative;
             padding: 45px 0 0 100px;

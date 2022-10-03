@@ -1,0 +1,20 @@
+.skills {
+    padding-top: 120px;
+    &__title {
+        text-align: center;
+        position: relative;
+        @include before_circle;
+        &:before {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__subtitle {
+        text-align: center;
+    }
+    &__item {
+        width: 270px;
+        min-height: 270px;
+        border: 1px solid ;
+    }
+}
