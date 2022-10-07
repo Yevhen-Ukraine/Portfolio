@@ -10,3 +10,4 @@ hamburger.addEventListener('click', () => {
 close.addEventListener('click', () => {
     menu.classList.remove('active');
 }); //При нажатии на крестик пропадает класс active
+
