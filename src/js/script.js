@@ -11,3 +11,7 @@ close.addEventListener('click', () => {
     menu.classList.remove('active');
 }); //При нажатии на крестик пропадает класс active
 
+const counters = document.querySelectorAll('.skills__ratings-counter'),
+    lines = document.querySelectorAll('.skills__ratings-line span');
+
+console.log(counters);
